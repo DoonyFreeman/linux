@@ -66,7 +66,6 @@ static int __init acpi_parse_gicc_pxm(union acpi_subtable_headers *header,
 	acpi_early_node_map[cpu] = node;
 	pr_info("SRAT: PXM %d -> MPIDR 0x%llx -> Node %d\n", pxm,
 		cpu_logical_map(cpu), node);
-
 	return 0;
 }
 
